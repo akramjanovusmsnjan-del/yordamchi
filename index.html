@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSAL EDU AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a class="brand" href="#">UNIVERSAL <span>EDU AI</span></a>
+    <select id="language" aria-label="Tilni tanlash">
+        <option value="uz">O‘zbekcha</option>
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+    </select>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-tag">✦ SUN’IY INTELLEKT TEXNOLOGIYALARI</div>
+        <h1>Bir mavzu.<br><span>Butun bir ta’lim olami.</span></h1>
+        <p>
+            Istalgan fan, istalgan mavzu va istalgan ta’lim bosqichi
+            uchun mukammal dars materiallarini yarating.
+        </p>
+    </section>
+
+    <section class="generator panel">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">BOSHLASH</span>
+                <h2>Dars ma’lumotlari</h2>
+                <p>Quyidagi ma’lumotlarni kiriting.</p>
+            </div>
+            <div class="spark">✦</div>
+        </div>
+
+        <div class="form-grid">
+            <label>
+                Fan nomi
+                <input id="subject" type="text" placeholder="Masalan: Tarix, Matematika, Biologiya">
+            </label>
+
+            <label>
+                Sinf yoki ta’lim darajasi
+                <select id="grade">
+                    <option value="">Tanlang</option>
+                    <option>1–4-sinf</option>
+                    <option>5–7-sinf</option>
+                    <option>8–9-sinf</option>
+                    <option>10–11-sinf</option>
+                    <option>Texnikum / kollej</option>
+                    <option>Universitet</option>
+                    <option>Mustaqil o‘rganuvchi</option>
+                </select>
+            </label>
+
+            <label class="wide">
+                Dars mavzusi
+                <input id="topic" type="text" placeholder="Masalan: Amir Temur davlati">
+            </label>
+
+            <label class="wide">
+                Qo‘shimcha talablar
+                <textarea id="extra" rows="4" placeholder="Masalan: Ko‘proq amaliy misollar, murakkab testlar, guruhli mashg‘ulotlar..."></textarea>
+            </label>
+        </div>
+
+        <button id="generateBtn" class="primary-btn">
+            <span>✦</span> <span id="generateText">BARCHA MATERIALLARNI YARATISH</span>
+        </button>
+
+        <p class="hint" id="hint">Server talab qilinmaydi. Natija shu brauzerda yaratiladi.</p>
+        <div id="status" class="status" role="status"></div>
+    </section>
+
+    <section class="features">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">IMKONIYATLAR</span>
+                <h2>Bir platformada barcha materiallar</h2>
+            </div>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature"><span>01</span><b>Nazariy ma’lumot</b></div>
+            <div class="feature"><span>02</span><b>Dars rejasi</b></div>
+            <div class="feature"><span>03</span><b>Test savollari</b></div>
+            <div class="feature"><span>04</span><b>Ochiq savollar</b></div>
+            <div class="feature"><span>05</span><b>Ta’limiy o‘yinlar</b></div>
+            <div class="feature"><span>06</span><b>Ish varaqasi</b></div>
+            <div class="feature"><span>07</span><b>Krossvord</b></div>
+            <div class="feature"><span>08</span><b>Taqdimot rejasi</b></div>
+            <div class="feature"><span>09</span><b>Rasm g‘oyalari</b></div>
+            <div class="feature"><span>10</span><b>Uyga vazifa</b></div>
+            <div class="feature"><span>11</span><b>Baholash mezonlari</b></div>
+            <div class="feature"><span>12</span><b>O‘qituvchi qo‘llanmasi</b></div>
+        </div>
+    </section>
+
+    <section id="resultSection" class="result-section hidden">
+        <div class="result-top">
+            <div>
+                <span class="eyebrow">TAYYOR MATERIALLAR</span>
+                <h2 id="resultTitle">Dars to‘plamingiz</h2>
+                <p id="resultInfo">Yaratilgan materiallar quyida.</p>
+            </div>
+            <span class="result-symbol">✦</span>
+        </div>
+
+        <div class="action-bar">
+            <button id="copyBtn" class="secondary-btn">📋 Nusxalash</button>
+            <button id="downloadBtn" class="secondary-btn">⬇ TXT yuklab olish</button>
+            <button id="printBtn" class="secondary-btn">🖨 PDF / Chop etish</button>
+        </div>
+
+        <div id="output" class="output"></div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-brand">UNIVERSAL <span>EDU AI</span></div>
+    <p>Ta’lim uchun cheksiz imkoniyatlar</p>
+    <small>Muallif: AKRAMJANOVA JADRA MARATOVNA</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
